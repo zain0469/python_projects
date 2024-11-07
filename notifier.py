@@ -1,8 +1,9 @@
-def notification_bar(title,notification):
-    title = title
-    notification = notification
-    
-def mursaleen_work(new,work):
-    new = new 
-    work = work  
-    
+from win10toast import ToastNotifier
+
+toaster = ToastNotifier()
+
+toaster.show_toast(
+    "Whatsapp",
+    "You have received new messages",
+    duration=5,
+)
